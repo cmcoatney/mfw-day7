@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page Title</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- stylesheet placed after bootstrap can extend/override its classes -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="navigation--ul">
+      <h4>Unordered List</h4>
+    </section>
+
+    <section id="navigation--links">
+      <h4>Links</h4>
+    </section>
+
+    <section id="navigation--navs">
+      <h4>Navs</h4>
+    </section>
+
+    <section id="navigation--horz">
+      <h4>Horizontal Alignment</h4>
+
+      <h5>Centered</h5>
+
+      <h5>Right Aligned</h5>
+    </section>
+
+    <section id="navigation--tabs">
+      <h4>Tabs</h4>
+    </section>
+
+    <section id="navigation--pills">
+      <h4>Pills</h4>
+    </section>
+
+    <section id="navigation--justify">
+      <h4>Justify</h4>
+
+      <h5>Unordered List</h5>
+
+      <h5>Links</h5>
+    </section>
+
+    <section id="navigation--responsive">
+      <h4>Responsive</h4>
+    </section>
+
+    <section id="navigation--dropdown">
+      <h4>Dropdown</h4>
+    </section>
+
+    <section id="navigation--tabs">
+      <h4>Tabs</h4>
+
+      <h5>List</h5>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabList-1"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#tabList-pane-1"
+            role="tab"
+            aria-controls="tabList-pane-1"
+            aria-selected="true"
+          >
+            Panel 1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabList-2"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabList-pane-2"
+            role="tab"
+            aria-controls="tabList-pane-2"
+            aria-selected="false"
+          >
+            Panel 2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabList-3"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabList-pane-3"
+            role="tab"
+            aria-controls="tabList-pane-3"
+            aria-selected="false"
+          >
+            Panel 3
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div
+          id="tabList-pane-1"
+          class="tab-pane active"
+          role="tabpanel"
+          aria-labelledby="tabList-1"
+        >
+          <p>
+            Panel 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabList-pane-2"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="tabList-2"
+        >
+          <p>
+            Panel 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabList-pane-3"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="tabList-3"
+        >
+          <p>
+            Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+      </div>
+
+      <h5>No List</h5>
+      <nav>
+        <div class="nav nav-tabs" role="tablist">
+          <button
+            type="button"
+            id="tabButtons-1"
+            class="nav-item nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#tabButtons-pane-1"
+            role="tab"
+            aria-controls="tabButtons-pane-1"
+            aria-selected="true"
+          >
+            Panel 1
+          </button>
+          <button
+            type="button"
+            id="tabButtons-2"
+            class="nav-item nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabButtons-pane-2"
+            role="tab"
+            aria-controls="tabButtons-pane-2"
+            aria-selected="false"
+          >
+            Panel 2
+          </button>
+          <button
+            type="button"
+            id="tabButtons-3"
+            class="nav-item nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabButtons-pane-3"
+            role="tab"
+            aria-controls="tabButtons-pane-3"
+            aria-selected="false"
+          >
+            Panel 3
+          </button>
+        </div>
+      </nav>
+      <div class="tab-content">
+        <div
+          id="tabButtons-pane-1"
+          class="tab-pane active"
+          role="tabpanel"
+          aria-labelledby="tabButtons-1"
+        >
+          <p>
+            Panel 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabButtons-pane-2"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="tabButtons-2"
+        >
+          <p>
+            Panel 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabButtons-pane-3"
+          class="tab-pane"
+          role="tabpanel"
+          aria-labelledby="tabButtons-3"
+        >
+          <p>
+            Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+      </div>
+
+      <h5>Vertical</h5>
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav flex-column nav-pills" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                type="button"
+                id="tabVertical-1"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                data-bs-target="#tabVertical-pane-1"
+                role="tab"
+                aria-controls="tabVertical-pane-1"
+                aria-selected="true"
+              >
+                Panel 1
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                type="button"
+                id="tabVertical-2"
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#tabVertical-pane-2"
+                role="tab"
+                aria-controls="tabVertical-pane-2"
+                aria-selected="false"
+              >
+                Panel 2
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                type="button"
+                id="tabVertical-3"
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#tabVertical-pane-3"
+                role="tab"
+                aria-controls="tabVertical-pane-3"
+                aria-selected="false"
+              >
+                Panel 3
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <div class="tab-content">
+            <div
+              id="tabVertical-pane-1"
+              class="tab-pane active"
+              role="tabpanel"
+              aria-labelledby="tabVertical-1"
+            >
+              <p>
+                Panel 1: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus
+                euismod turpis, vitae semper ipsum augue a velit. Pellentesque
+                id finibus velit. Ut sagittis maximus maximus. In aliquet enim
+                sed turpis mollis ornare. Suspendisse elementum a magna eu
+                luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor
+                in. Sed lacinia metus viverra, scelerisque enim sed,
+                sollicitudin magna. Sed non augue sit amet nisl tincidunt
+                ultrices. Praesent nec lacus eget tortor ultricies pulvinar.
+                Praesent euismod ut lorem sit amet bibendum.
+              </p>
+            </div>
+            <div
+              id="tabVertical-pane-2"
+              class="tab-pane"
+              role="tabpanel"
+              aria-labelledby="tabVertical-2"
+            >
+              <p>
+                Panel 2: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus
+                euismod turpis, vitae semper ipsum augue a velit. Pellentesque
+                id finibus velit. Ut sagittis maximus maximus. In aliquet enim
+                sed turpis mollis ornare. Suspendisse elementum a magna eu
+                luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor
+                in. Sed lacinia metus viverra, scelerisque enim sed,
+                sollicitudin magna. Sed non augue sit amet nisl tincidunt
+                ultrices. Praesent nec lacus eget tortor ultricies pulvinar.
+                Praesent euismod ut lorem sit amet bibendum.
+              </p>
+            </div>
+            <div
+              id="tabVertical-pane-3"
+              class="tab-pane"
+              role="tabpanel"
+              aria-labelledby="tabVertical-3"
+            >
+              <p>
+                Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Maecenas feugiat, urna ut pharetra ultricies, augue tellus
+                euismod turpis, vitae semper ipsum augue a velit. Pellentesque
+                id finibus velit. Ut sagittis maximus maximus. In aliquet enim
+                sed turpis mollis ornare. Suspendisse elementum a magna eu
+                luctus. Etiam tincidunt mattis mauris, non lobortis nulla tempor
+                in. Sed lacinia metus viverra, scelerisque enim sed,
+                sollicitudin magna. Sed non augue sit amet nisl tincidunt
+                ultrices. Praesent nec lacus eget tortor ultricies pulvinar.
+                Praesent euismod ut lorem sit amet bibendum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h5>Fade Effect</h5>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabFade-1"
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#tabFade-pane-1"
+            role="tab"
+            aria-controls="tabFade-pane-1"
+            aria-selected="true"
+          >
+            Panel 1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabFade-2"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabFade-pane-2"
+            role="tab"
+            aria-controls="tabFade-pane-2"
+            aria-selected="false"
+          >
+            Panel 2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            type="button"
+            id="tabFade-3"
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#tabFade-pane-3"
+            role="tab"
+            aria-controls="tabFade-pane-3"
+            aria-selected="false"
+          >
+            Panel 3
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div
+          id="tabFade-pane-1"
+          class="tab-pane fade show active"
+          role="tabpanel"
+          aria-labelledby="tabFade-1"
+        >
+          <p>
+            Panel 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabFade-pane-2"
+          class="tab-pane fade"
+          role="tabpanel"
+          aria-labelledby="tabFade-2"
+        >
+          <p>
+            Panel 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+        <div
+          id="tabFade-pane-3"
+          class="tab-pane fade"
+          role="tabpanel"
+          aria-labelledby="tabFade-3"
+        >
+          <p>
+            Panel 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas feugiat, urna ut pharetra ultricies, augue tellus euismod
+            turpis, vitae semper ipsum augue a velit. Pellentesque id finibus
+            velit. Ut sagittis maximus maximus. In aliquet enim sed turpis
+            mollis ornare. Suspendisse elementum a magna eu luctus. Etiam
+            tincidunt mattis mauris, non lobortis nulla tempor in. Sed lacinia
+            metus viverra, scelerisque enim sed, sollicitudin magna. Sed non
+            augue sit amet nisl tincidunt ultrices. Praesent nec lacus eget
+            tortor ultricies pulvinar. Praesent euismod ut lorem sit amet
+            bibendum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-light">
+        <hr />
+        <br />
+        <h4>Navbar Component</h4>
+        <br />
+        <hr />
+      </div>
+      <p>Navbar component is a wrapper around common navigation elements forming a responsive header</p>
+    
+    <ul class="li">Brand - Link, Heading, Image</ul>
+    <ul class="li">Nav - UL, Links Dropdown</ul>
+    <ul class="li">Forms, Text, Colors</ul>
+    <ul class="li">Toggler (Hamburger)</ul>
+ 
+<!-- NAVBAR GOES HERE-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- END NAVBAR -->
+    
+    </section>
+  <div class="bg-dark p-5">
+        <hr />
+        <br />
+        <h4>footer</h4>
+        <br />
+        <hr />
+      </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
