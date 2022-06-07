@@ -1,9 +1,11 @@
-
 .container {
+  border: 5px red solid;
   height: 400px;
+  padding: 0;
+
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: flex-start;
   gap: 1px;
 
   flex-direction: column;
