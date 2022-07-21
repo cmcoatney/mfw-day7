@@ -1,0 +1,77 @@
+.description {
+  min-height: 400px;
+}
+
+.jumbo {
+  height: 600px;
+}
+
+.huge {
+  height: 500px;
+}
+
+.tall {
+  height: 400px;
+}
+
+.small {
+  height: 200px;
+}
+
+.short {
+  height: 120px;
+}
+
+.tiny {
+  height: 50px;
+}
+
+.hero {
+  min-height: 600px;
+  background-image: url(../img/nasa.jpg);
+  background-size: cover;
+
+}
+
+.overlay {
+    background: rgba(0, 0, 255, 0.25);
+}
+
+
+.parallax {
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-1 {
+  /* The image used */
+  background-image: url(../img/parallax-1.jpg);
+}
+
+.parallax-2 {
+  /* The image used */
+  background-image: url(../img/parallax-2.jpg);
+}
+
+.parallax-3 {
+  /* The image used */
+  background-image: url(../img/parallax-3.jpg);
+}
+
+.parallax-4 {
+  /* The image used */
+  background-image: url(../img/parallax-4.jpg);
+}
+
+.parallax-5 {
+  /* The image used */
+  background-image: url(../img/parallax-5.jpg);
+}
+
+
